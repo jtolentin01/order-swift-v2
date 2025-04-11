@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "San Francisco";
+    box-sizing: border-box;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 50px; 
+}
+
+/* ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 1.25rem;
+
+} */
+
+/* a {
+    color: blue;
+    text-decoration: underline;
+} */

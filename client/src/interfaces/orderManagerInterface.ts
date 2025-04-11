@@ -1,0 +1,48 @@
+export interface OrderManagerInterface {
+    orderManagerId: string,
+    orderManagerName: string,
+    description: string,
+    thumbnail?: string,
+    createdBy: string,
+    isActive: Boolean,
+    brands?: OrderManagerBrandsInterface[],
+    createdDate: Date,
+    updatedDate: Date,
+    updatedBy: string,
+}
+
+export interface OrderManagerBrandsInterface {
+    orderManagerId: string,
+    brandId: string,
+    brandName: string,
+    description: string,
+    brandThumbnail: string,
+    notes: string[],
+    createdBy: string,
+    createdDate: Date,
+    updatedDate: Date,
+    updatedBy: string,
+}
+
+export interface OrderManagerBrandOrdersInterface {
+    orderManagerId: string,
+    brandId: string,
+    orderId: string,
+    poNumber: number,
+    orderSku: string,
+    trackingNumber: number,
+    customerName: string,
+    lesd: Date,
+    quantity: number,
+    purchaseDate: Date,
+    orderDate: Date,
+    status: string,
+    smNotes: string,
+    csNotes: string,
+    primeChecker: string,
+    doubleOrderChecker: number,
+    createdBy: string,
+    createdDate: Date,
+    updatedDate: Date,
+    updatedBy: string,
+}
